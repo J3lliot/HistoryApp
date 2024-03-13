@@ -41,8 +41,8 @@
 
     <Button
         android:id="@+id/confirmGuess"
-        android:layout_width="205sp"
-        android:layout_height="48sp"
+        android:layout_width="236dp"
+        android:layout_height="48dp"
         android:layout_marginStart="103dp"
         android:layout_marginEnd="103dp"
         android:backgroundTint="#000000"
@@ -54,8 +54,8 @@
 
     <Button
         android:id="@+id/clearGuess"
-        android:layout_width="205sp"
-        android:layout_height="48sp"
+        android:layout_width="236dp"
+        android:layout_height="50dp"
         android:layout_marginStart="103dp"
         android:layout_marginTop="48sp"
         android:layout_marginEnd="103dp"
@@ -74,7 +74,7 @@
         android:text=""
 
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/numberEnt"
         app:layout_constraintEnd_toEndOf="parent"
