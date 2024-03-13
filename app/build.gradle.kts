@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+
+    dataBinding {
+        enable = true
+    }
+    viewBinding {
+        enable = true
+    }
+
     namespace = "com.example.historyapp"
     compileSdk = 34
 
