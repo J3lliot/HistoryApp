@@ -45,7 +45,12 @@ class MainActivity : AppCompatActivity() {
                 } else{
                     disHistory(userAge, txt)
                 }
+            }else {
+                txt.text = "Please Enter A Valid Number."
             }
+        }
+        clsNum.setOnClickListener {
+            numInput.text.clear()
         }
     }
     @SuppressLint("SetTextI18n")
