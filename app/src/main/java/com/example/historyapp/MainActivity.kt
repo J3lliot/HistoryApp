@@ -13,16 +13,16 @@ import com.example.historyapp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var ageMap = mapOf(
-        1 to "n1",
-        2 to "n2",
-        3 to "n3",
-        4 to "n4",
-        5 to "n5",
-        6 to "n6",
-        7 to "n7",
-        8 to "n8",
-        8 to "n9",
-        10 to "n10"
+        21 to "n1",
+        22 to "n2",
+        33 to "n3",
+        44 to "n4",
+        55 to "n5",
+        66 to "n6",
+        77 to "n7",
+        88 to "n8",
+        98 to "n9",
+        50 to "n10"
     )
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
