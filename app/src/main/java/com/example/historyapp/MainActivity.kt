@@ -11,19 +11,24 @@ import com.example.historyapp.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+    companion object{
+        private const val minAge = 20
+        private const val maxAge = 100
+        private var ageMap = mapOf(
+            20 to "Agatha of sicily",
+            28 to "Heath Ledger",
+            36 to "Bob Marley",
+            44 to "Pablo Escobar",
+            52 to "Grace Kelly",
+            60 to "Theodore Roosevelt",
+            68 to "Rita Hayworth",
+            76 to "Albert Einstein",
+            84 to "Benjamin Franklin",
+            92 to "Rosa Parks"
+        )
+
+    }
     private lateinit var binding: ActivityMainBinding
-    private var ageMap = mapOf(
-        20 to "Agatha of sicily",
-        28 to "Heath Ledger",
-        36 to "Bob Marley",
-        44 to "Pablo Escobar",
-        52 to "Grace Kelly",
-        60 to "Theodore Roosevelt",
-        68 to "Rita Hayworth",
-        76 to "Albert Einstein",
-        84 to "Benjamin Franklin",
-        92 to "Rosa Parks"
-    )
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,16 +44,17 @@ class MainActivity : AppCompatActivity() {
         entNum.setOnClickListener{
             val num = numInput.text.toString()
             val userAge = num.toIntOrNull()
-            if (userAge != null){
-                if (userAge < 20 || userAge > 100){
-                    txt.text = "Please Enter A Number Between 20 and 100."
-                } else{
-                    disHistory(userAge, txt)
-                }
-            }else {
-                txt.text = "Please Enter A Valid Number."
+            if (num.isBlank()) {
+                txt.text = "Please enter a valid number."
+            } else if (userAge == null) {
+                txt.text = "Please enter a valid number."
+            } else if ((userAge < minAge) || (userAge > maxAge)) {
+                txt.text = "Please enter a number between 20 and 100."
+            } else {
+                disHistory(userAge, txt)
             }
         }
+
         clsNum.setOnClickListener {
             numInput.text.clear()
             txt.text = ""
