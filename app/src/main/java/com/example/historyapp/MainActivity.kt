@@ -13,16 +13,16 @@ import com.example.historyapp.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var ageMap = mapOf(
-        21 to "n1",
-        22 to "n2",
-        33 to "n3",
-        44 to "n4",
-        55 to "n5",
-        66 to "n6",
-        77 to "n7",
-        88 to "n8",
-        98 to "n9",
-        50 to "n10"
+        20 to "Agatha of sicily",
+        28 to "Heath Ledger",
+        36 to "Bob Marley",
+        44 to "Pablo Escobar",
+        52 to "Grace Kelly",
+        60 to "Theodore Roosevelt",
+        68 to "Rita Hayworth",
+        76 to "Albert Einstein",
+        84 to "Benjamin Franklin",
+        92 to "Rosa Parks"
     )
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,14 +51,15 @@ class MainActivity : AppCompatActivity() {
         }
         clsNum.setOnClickListener {
             numInput.text.clear()
+            txt.text = ""
         }
     }
     @SuppressLint("SetTextI18n")
     private fun disHistory(age: Int, txt: TextView){
         if (ageMap.containsKey(age)){
-            txt.text = "You are $age years old, which is the same age as ${ageMap[age]}. ${ageMap[age]} is a famous historical figure. "
+            txt.text = "You are $age years old, which is the same age as ${ageMap[age]}. ${ageMap[age]} is a famous figure. "
         } else {
-            txt.text = "There is no historical figure known to be around $age years old"
+            txt.text = "There is no person that matches $age years old"
         }
     }
 }
