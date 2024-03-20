@@ -21,3 +21,7 @@ git clone https://github.com/J3lliot/HistoryApp.git
 
 Once the app is installed and running on your device/emulator, you will see the main screen with a input field for entering your age. Enter your age in the input field and tap the "Confirm" button to see historical figures that share your age.
 You can also hit the "Clear" button to reset the input field and displayed text.
+
+## Features
+
+aaa
