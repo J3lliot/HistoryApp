@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/history_w_bg"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,13 +14,15 @@
         android:layout_marginStart="37dp"
         android:layout_marginTop="16sp"
         android:layout_marginEnd="32dp"
+        android:background="#F2F2F2"
+        android:backgroundTint="#D9A443"
         android:text="The History App"
         android:textAlignment="center"
+
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextSizeCheck" />
 
@@ -78,7 +81,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/numberEnt"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Heading" />
+        app:layout_constraintTop_toBottomOf="@+id/Heading"
+        app:layout_constraintVertical_bias="0.39" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
