@@ -15,7 +15,9 @@ git clone https://github.com/J3lliot/HistoryApp.git
 ```
 2. Open the clonned repository in Android Studio and wait for gradle to sync.
 3. Connect [Android Device](https://developer.android.com/codelabs/basic-android-kotlin-compose-connect-device#0) or [emulator](https://www.devopsschool.com/blog/how-to-use-bluestacks-as-emulator-in-android-studio/).
-4. Build and run app on device.
+4. Build and run app on device/emulator.
 
-## Using the app
+## Running the app
 
+Once the app is installed and running on your device/emulator, you will see the main screen with a input field for entering your age. Enter your age in the input field and tap the "Confirm" button to see historical figures that share your age.
+You can also hit the "Clear" button to reset the input field and displayed text.
