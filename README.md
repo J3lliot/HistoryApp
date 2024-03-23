@@ -1,7 +1,11 @@
 # History App for Exploring History Figures Report
 ## Description
 
-HistoryApp is an Andoid application designed for users to explore historical figures based on their age. Users can input their age, and the app will output a historical figure with that same age.
+HistoryApp is an Andoid application designed for users to explore historical figures based on their age. Users can input their age, and the app will output a historical figure with that same age
+
+![Screenshot 2024-03-20 222635](https://github.com/J3lliot/HistoryApp/assets/163105038/5e01569b-fd1c-4e16-83ae-bf4016fa6508)
+
+
 
 ## Installing the app
 
