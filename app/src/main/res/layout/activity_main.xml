@@ -9,73 +9,59 @@
 
     <TextView
         android:id="@+id/Heading"
-        android:layout_width="342sp"
-        android:layout_height="46sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="16sp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="#F2F2F2"
         android:backgroundTint="#D9A443"
         android:text="The History App"
         android:textAlignment="center"
-
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextSizeCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/numberEnt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="250sp"
-        android:layout_marginEnd="101dp"
         android:ems="10"
         android:hint="Enter Age"
-        android:textAlignment="center"
         android:inputType="number"
-        android:minHeight="48sp"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Heading" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
 
     <Button
         android:id="@+id/confirmGuess"
-        android:layout_width="236dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="103dp"
-        android:layout_marginEnd="103dp"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="86dp"
         android:backgroundTint="#000000"
         android:text="Submit!"
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numberEnt" />
-
-    <Button
-        android:id="@+id/clearGuess"
-        android:layout_width="236dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="103dp"
-        android:layout_marginTop="48sp"
-        android:layout_marginEnd="103dp"
-        android:backgroundTint="#000000"
-        android:text="Clear!"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numberEnt" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515" />
 
     <TextView
         android:id="@+id/displayHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="#00FFFFFF"
-        android:text=""
 
+        android:text=""
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
@@ -85,5 +71,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Heading"
         app:layout_constraintVertical_bias="0.39" />
+
+    <Button
+        android:id="@+id/clearGuess"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginEnd="86dp"
+        android:backgroundTint="#000000"
+
+        android:text="Clear!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
