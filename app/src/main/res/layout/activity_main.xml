@@ -60,7 +60,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="#00FFFFFF"
-
+        android:textColor="@color/white"
+        android:backgroundTint="#FFFFFF"
         android:text=""
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
